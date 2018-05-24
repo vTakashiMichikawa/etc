@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
    # 初期表示
    def index
+    @users = User.all
    end
 
    # データを閲覧する画面を表示するためのAction
    def show
+    @users = User.all
    end
    # データを作成する画面を表示するためのAction
    def new
